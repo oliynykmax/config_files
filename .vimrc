@@ -1,6 +1,5 @@
 " General settings
 set nocompatible            " Be iMproved, required
-filetype off                " Required
 
 " Plug management
 call plug#begin('~/.vim/plugged')
@@ -53,3 +52,4 @@ inoremap <F1> <Esc>:Stdheader<CR>
 
 let g:user42 = 'maoliiny'
 let g:mail42 = 'maoliiny@student.hive.fi'
+set clipboard=unnamedplus
