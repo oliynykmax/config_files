@@ -68,3 +68,5 @@ bind \ck history-search-backward
 # === Disable accidental Ctrl+S freeze ===
 stty stop undef
 
+# starhip
+starship init fish | source
