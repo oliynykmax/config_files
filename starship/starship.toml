@@ -1,4 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
+right_format = """$status"""
+
 
 format = """
 [](surface0)\
@@ -93,7 +95,7 @@ RedHatEnterprise = "󱄛"
 show_always = true
 style_user = "bg:surface0 fg:text"
 style_root = "bg:surface0 fg:text"
-format = '[]($style)'
+format = '[ $host ]($style)'
 
 [directory]
 style = "fg:mantle bg:blue"
@@ -137,10 +139,6 @@ symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
 
-[java]
-symbol = " "
-style = "bg:green"
-format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
 
 [kotlin]
 symbol = ""
@@ -179,3 +177,8 @@ vimcmd_symbol = '[](bold fg:creen)'
 vimcmd_replace_one_symbol = '[](bold fg:purple)'
 vimcmd_replace_symbol = '[](bold fg:purple)'
 vimcmd_visual_symbol = '[](bold fg:lavender)'
+
+[status]
+format = '[ $status ](bg:red fg:black)'
+disabled = false
+
