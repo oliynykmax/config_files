@@ -22,7 +22,6 @@ set autoindent              " Auto-indent new lines
 set smartindent             " Smart auto-indent
 set tabstop=4               " Number of spaces a tab counts for
 set shiftwidth=4            " Number of spaces to use for autoindent
-set expandtab               " Use spaces instead of tabs
 set mouse=a                 " Enable mouse support in all modes
 set hidden                  " Allow background buffers
 set nobackup                " Do not keep a backup file
@@ -38,6 +37,8 @@ set laststatus=2            " Always show the status line
 set cmdheight=1             " Command line height
 set updatetime=300          " Faster completion (for plugins)
 set signcolumn=yes          " Always show the sign column
+set noexpandtab
+set softtabstop=0
 
 " Theme: Catppuccin-Mocha
 set termguicolors           " Enable true colors
