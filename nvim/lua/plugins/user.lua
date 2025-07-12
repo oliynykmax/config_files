@@ -2,18 +2,9 @@
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
 -- Here are some examples:
 
-vim.g.copilot_suggestions_enabled = false
-vim.g.copilot_no_tab_map = true
-vim.api.nvim_set_keymap('i', '<M-l>', 'copilot#suggest()\<CR>', { silent = true, expr = true, noremap = true })
-vim.api.nvim_set_keymap('i', '<CR>', 'copilot#accept("<CR>")', { silent = true, expr = true, noremap = true })
 
 ---@type LazySpec
 return {
-
-  
-
-
-  
 
   "https://github.com/cacharle/c_formatter_42.vim",
 
@@ -95,5 +86,7 @@ return {
       )
     end,
   },
+
+  { "EyzeCOLD/nvim-function-linecount", config = function() require("nvim-function-linecount").setup() end },
 
   }
