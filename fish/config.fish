@@ -16,27 +16,26 @@ set -x PATH \
   /usr/local/sbin \
   /usr/bin/site_perl \
   /usr/bin/vendor_perl \
-  /usr/bin/core_perl
+  /usr/bin/core_perl \
 # Locale
 set -x LANG en_US.UTF-8
 set -x LANGUAGE en_US.UTF-8
 set -x LC_ALL en_US.UTF-8
+set -Ux DEBUGINFOD_URLS https://debuginfod.archlinux.org
 
-# Go setup
-set -e GOROOT
-set -x GOROOT /usr/lib/go
 # kitty integration
 alias icat="kitty +kitten icat"
 alias unicode="kitty +kitten unicode_input"
 alias kdiff="kitty +kitten diff"
 alias ktheme="kitty +kitten themes"
 alias khgrep="kitty +kitten hyperlinked_grep"
-
+alias ls='lsd'
 # Aliases, mainly used for Hive
 alias nb='norminette -R CheckDefine -R CheckForbiddenSourceHeader'
 alias vim='nvim'
 alias make='make -j16'
 alias ccc='cc -Wall -Werror -Wextra'
+alias cd='z'
 #beatiful prompt
 function fish_prompt
     set_color -o white
@@ -57,6 +56,7 @@ end
 set -g fish_complete_path ~/.config/fish/completions
 # Show . and .. in completion
 set -g __fish_complete_special_dirs true
+set -x MANPAGER "sh -c 'col -bx | batcat --paging=always -l man'"
 
 # === Behavior settings ===
 set -g fish_autosuggestion_enabled 1
@@ -69,4 +69,5 @@ bind \ck history-search-backward
 stty stop undef
 
 # starhip
+zoxide init fish | source
 starship init fish | source
