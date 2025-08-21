@@ -7,6 +7,8 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "tab_size": 2,
+  "hard_tabs": false,
   "show_edit_predictions": true,
   "languages": {
     "C++": {
