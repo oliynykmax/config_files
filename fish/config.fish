@@ -56,7 +56,7 @@ end
 set -g fish_complete_path ~/.config/fish/completions
 # Show . and .. in completion
 set -g __fish_complete_special_dirs true
-set -x MANPAGER "sh -c 'col -bx | batcat --paging=always -l man'"
+
 
 # === Behavior settings ===
 set -g fish_autosuggestion_enabled 1
@@ -71,3 +71,8 @@ stty stop undef
 # starhip
 zoxide init fish | source
 starship init fish | source
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /home/kort/.lmstudio/bin
+# End of LM Studio CLI section
+
