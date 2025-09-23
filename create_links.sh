@@ -31,6 +31,7 @@ create_link "$SCRIPT_DIR/fish/config.fish"    "$HOME/.config/fish/config.fish"
 create_link "$SCRIPT_DIR/starship/starship.toml" "$HOME/.config/starship.toml"
 create_link "$SCRIPT_DIR/kitty/kitty.conf"    "$HOME/.config/kitty/kitty.conf"
 create_link "$SCRIPT_DIR/zsh/.zshrc"          "$HOME/.zshrc"
+create_link "$SCRIPT_DIR/fastfetch/config.jsonc" "$HOME/.config/fastfetch/config.jsonc"
 
 echo -e "
 Done."
