@@ -4,11 +4,9 @@
 # Basic settings
 set autoindent
 set backup
-set const
 set historylog
 set linenumbers
 set mouse
-set smooth
 set tabsize 4
 set tabstospaces
 set trimblanks
@@ -24,8 +22,6 @@ set statuscolor brightwhite,blue
 set keycolor brightcyan
 set functioncolor brightyellow
 set numbercolor cyan
-set stringcolor brightgreen
-set commentcolor brightblack
 
 # Custom syntax for JSON
 syntax "JSON" "\.json$"
