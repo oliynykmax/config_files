@@ -32,6 +32,8 @@ create_link "$SCRIPT_DIR/starship/starship.toml" "$HOME/.config/starship.toml"
 create_link "$SCRIPT_DIR/kitty/kitty.conf"    "$HOME/.config/kitty/kitty.conf"
 create_link "$SCRIPT_DIR/zsh/.zshrc"          "$HOME/.zshrc"
 create_link "$SCRIPT_DIR/fastfetch/config.jsonc" "$HOME/.config/fastfetch/config.jsonc"
+create_link "$SCRIPT_DIR/nano/nanorc" "$HOME/.nanorc"
+create_link "$SCRIPT_DIR/nano/syntax" "$HOME/.nano/syntax"
 
 echo -e "
 Done."

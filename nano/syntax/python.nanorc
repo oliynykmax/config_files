@@ -1,0 +1,7 @@
+syntax "Python" "\.py$|\.pyw$"
+color brightred "def |class |if |elif |else |for |while |try |except |finally |with |import |from |return |yield |raise |break |continue |pass |assert |global |lambda"
+color brightcyan ""[^"]*"|'[^']*'"
+color brightgreen "#.*$"
+color brightyellow "\b\d+\.?\d*\b"
+color brightmagenta "True|False|None"
+color brightblue "__[a-zA-Z_][a-zA-Z0-9_]*__"
