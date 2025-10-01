@@ -24,7 +24,7 @@ alias ccc='cc -Wall -Werror -Wextra'
 alias cd='z'
 
 # MANPAGER
-export MANPAGER="sh -c 'col -bx | batcat --paging=always -l man'"
+export MANPAGER="sh -c 'col -bx | bat --paging=always -l man'"
 
 # Disable accidental Ctrl+S freeze
 stty -ixon
