@@ -76,3 +76,10 @@ starship init fish | source
 set -gx PATH $PATH /home/kort/.lmstudio/bin
 # End of LM Studio CLI section
 
+
+# pnpm
+set -gx PNPM_HOME "/home/kort/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
