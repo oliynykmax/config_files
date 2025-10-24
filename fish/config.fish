@@ -22,7 +22,6 @@ set -x LANG en_US.UTF-8
 set -x LANGUAGE en_US.UTF-8
 set -x LC_ALL en_US.UTF-8
 set -Ux DEBUGINFOD_URLS https://debuginfod.archlinux.org
-
 # kitty integration
 alias icat="kitty +kitten icat"
 alias unicode="kitty +kitten unicode_input"
@@ -36,13 +35,12 @@ alias vim='nvim'
 alias make='make -j16'
 alias ccc='cc -Wall -Werror -Wextra'
 alias cd='z'
-#beatiful prompt
+alias yay='yay --noconfirm'
+# prompt for editors
 function fish_prompt
     set_color -o white
     printf '\n'
-    set_color -b '#56a9e9' -o black
-    printf ' %s ' (whoami)
-    set_color -b '#e0e2db' -o black
+    set_color -b '#FFFF00' -o black
     printf ' %s' (prompt_pwd)
     printf '%s ' (__fish_git_prompt)
     set_color normal
@@ -70,8 +68,9 @@ stty stop undef
 
 # starhip
 zoxide init fish | source
-starship init fish | source
-
+if not set -q ZED
+  starship init fish | source
+end
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /home/kort/.lmstudio/bin
 # End of LM Studio CLI section
