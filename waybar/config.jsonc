@@ -33,7 +33,7 @@
 
 "group/right2": {
     "orientation": "inherit",
-    "modules": ["group/tray-expander"]
+    "modules": ["tray", "backlight", "bluetooth"]
   },
 
   "group/right3": {
